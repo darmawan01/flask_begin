@@ -1,6 +1,6 @@
 from app import ma
 from models.user import *
 
-class UserSchema(ma.ModelSchema):
+class UserSchema(ma.Schema):
     class Meta:
-        model: User
+        fields = ('id', 'username', 'email')
